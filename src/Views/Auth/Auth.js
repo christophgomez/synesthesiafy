@@ -24,7 +24,7 @@ class Auth extends React.Component {
     this.synth = React.createRef();
   }
   handleKeyDown(event) {
-    if (this.state.displayColorAccordion) {
+    if (this.state.displayColorSettings) {
       if (!event.repeat) {
         for (let i = 0; i < this.synth.current.notesByKeyCode.length; i++) {
           if (event.keyCode === this.synth.current.notesByKeyCode[i].keyCode) {
