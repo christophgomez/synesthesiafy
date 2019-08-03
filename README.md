@@ -20,3 +20,8 @@ This web app is a online Spotify web player that allows you to explore and enjoy
 - Implement MongoDB user database
   - Implement Login/Logout functions
   - Implement color preferences in user schema
+- Implement Display preferences/settings.
+  - Random Color Mode
+  - Artwork/Color toggle
+  - Immediately update UI color on key/color change (easy)
+- Chrome extension to analyze the frequency of every note to create a real-time, color changing UI/visualizer (may be against Web SDK user agreement, see VueVisualizer for current chrome extension/Spotify implementation)
