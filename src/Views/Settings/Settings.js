@@ -118,6 +118,9 @@ export default class SettingsPage extends React.Component {
           </Accordion.Toggle>
 
           <Accordion.Collapse eventKey="0">
+            <div>
+              
+            </div>
           </Accordion.Collapse>
         </Accordion>
 

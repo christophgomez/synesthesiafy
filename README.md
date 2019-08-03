@@ -1,10 +1,14 @@
 # synesthiasfy
 
+synesthesiafy is an exploration of synesthesia, and more specifically chromesthesia, through spotify. This web app serves as a tool for synesthetes to organize their music based on the colors they associate or see with their music, and for the general population to explore their library through a synesthetic lens.
+
 My first React App, running on Node.js/Express, still very much in the proof of concept/build stage.
 
-This web app is a online Spotify web player that allows you to explore and enjoy your music through a synesthetic lens. The Spotify web API and Spotify Webplayback SDK are used in conjunction to create a colorful listening experience. Users select colors for every music key upon logging in for the first time, and the app then analyzes every song in their library to convert them to the proper color, as well as changing UI colors in response to currently playing tracks.
+## Details
 
-## TODO
+This web app is a online Spotify web player that allows you to explore and enjoy your music through a synesthetic lens. The Spotify web API and Spotify Webplayback SDK are used in conjunction to create a colorful listening experience. Users select colors for every music key upon logging in for the first time; the app then analyzes every song in their library to convert them to the proper color, and changes the UI colors in response to currently playing tracks.
+
+### TODO
 
 - Implement color effects for various song features (Modality (major/minor), Tempo, Valence, Loudness, Energy, etc.)
 - Implement Library search

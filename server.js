@@ -25,5 +25,5 @@ app.get('*', function (req, res) {
 });
 
 const port = process.env.PORT || config.serverPort;
-var baseURL = config.baseURL;
+var baseURL = process.env.baseURL || config.baseURL;
 server.listen(port, () => console.log('Server listening on port ' + baseURL + port));
