@@ -9,9 +9,16 @@ class About extends React.Component {
     this.state = {
       client_id: 'febd55d4c92f40abb96828b42c312c97',
       scopes: 'playlist-read-private playlist-read-collaborative user-read-private user-read-birthdate user-read-email user-read-playback-state user-read-currently-playing user-modify-playback-state app-remote-control streaming user-top-read user-read-recently-played user-library-read',
-      redirect: 'http://localhost:3000/success',
+      redirect: '',
     };
     this.handleClick = this.handleClick.bind(this);
+  }
+  componentDidMount() {
+    if (process.env.NODE_ENV === 'development') {
+      this.setState({ redirect: 'http://localhost:3000/success' });
+    } else {
+      this.setState({ redirect: 'https://synesthesiafy.herokuapp.com/success' });
+    }
   }
   handleClick() {
     window.location = 'https://accounts.spotify.com/authorize' +

@@ -11,11 +11,18 @@ class Home extends React.Component {
     this.state = {
       client_id: 'febd55d4c92f40abb96828b42c312c97',
       scopes: 'playlist-read-private playlist-read-collaborative user-read-private user-read-birthdate user-read-email user-read-playback-state user-read-currently-playing user-modify-playback-state app-remote-control streaming user-top-read user-read-recently-played user-library-read',
-      redirect: 'http://localhost:3000/success',
+      redirect: '',
     };
     this.handleClick = this.handleClick.bind(this);
     if (localStorage.access_token) {
       this.props.history.push('/dashboard');
+    }
+  }
+  componentDidMount() {
+    if (process.env.NODE_ENV === 'development') {
+      this.setState({ redirect: 'http://localhost:3000/success' });
+    } else {
+      this.setState({ redirect: 'https://synesthesiafy.herokuapp.com/success' });
     }
   }
   handleClick() {
@@ -30,14 +37,14 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <NavBar/>
+        <NavBar />
         <div className='Home'>
           <div className='Title'>
             <p>Organize / Listen / Discover</p>
             <h1 className='RainbowText'>Synesthesiafy</h1>
             <p>Experience Spotify Through Color</p>
             <Button width='15em' backgroundColor='#31b954' borderColor='#31b954' function={this.handleClick}>Get Started</Button>
-            <br/>
+            <br />
             <Button link='/about' width='12em'>Learn More</Button>
           </div>
         </div>
