@@ -32,9 +32,6 @@ export class Sidenav extends React.Component {
     }
   }
   render() {
-    const SideNav = styled.div`
-      background-color: ${this.state.color};
-    `
     return (
       <div className="sidenav">
         <h1 className='sidenav__header'>{this.props.title}</h1>

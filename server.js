@@ -4,7 +4,9 @@ const cors = require('cors');
 const morgan = require('morgan');
 const serveStatic = require('serve-static');
 const path = require('path');
-const config = require('./util/config');
+let config;
+if (process.env.NODE_ENV !== 'production')
+  config = require('./util/config');
 
 const app = express();
 var server = require('http').createServer(app);
@@ -16,10 +18,10 @@ app.use(cors());
 
 const spotifyRoutes = require('./routes/SpotifyRoutes.js');
 app.use('/spotify', spotifyRoutes);
-app.use("/", serveStatic(path.join(__dirname, '/dist')));
+app.use("/", serveStatic(path.join(__dirname, '/build')));
 // Catch all routes and redirect to the index file
 app.get('*', function (req, res) {
-  res.sendFile(__dirname + '/dist/index.html')
+  res.sendFile(__dirname + '/build/index.html')
 });
 
 const port = process.env.PORT || config.serverPort;

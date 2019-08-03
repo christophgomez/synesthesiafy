@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const config = require('../util/config');
-const url = config.baseURL + config.serverPort +"/spotify";
+let base = process.env.baseURL || 'http://localhost:3001';
+
+const url = base+"/spotify";
 
 const API = () => {
   return axios.create({

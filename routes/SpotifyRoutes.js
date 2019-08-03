@@ -1,12 +1,14 @@
 const express = require('express');
 const Spotify = require('../util/SpotifyAPI');
 const asyncMiddleware = require('../util/asyncMiddleWare');
-const config = require("../util/config");
+let config;
+if (process.env.NODE_ENV !== 'production')
+  config = require('../util/config');
 
 const Router = express.Router();
-const client_id = config.client_id;
-const client_secret = config.client_secret;
-const redirect_url = config.redirect;
+const client_id = process.env.client_id || config.client_id;
+const client_secret = process.env.client_secret || config.client_secret;
+const redirect_url = process.env.redirect || config.redirect;
 const api = new Spotify(client_id, client_secret, redirect_url);
 
 Router.post('/authorize', asyncMiddleware(async (req, res, next) => {
