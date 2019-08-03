@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let base = process.env.baseURL || 'http://localhost:3001';
+let base = process.env.REACT_APP_baseURL || 'http://localhost:3001';
 
 const url = base+"/spotify";
 
