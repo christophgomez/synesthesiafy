@@ -3,17 +3,10 @@ import './PlayerControls.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlayCircle, faPauseCircle } from '@fortawesome/free-regular-svg-icons';
 import { faStepForward, faStepBackward } from '@fortawesome/free-solid-svg-icons';
-import api from '../../Services/SpotifyAPI';
 import PlayerFunctions from '../../util/SpotifyPlayerFunctions.js';
 const SpotifyPlayer = new PlayerFunctions();
 
 export default class PlayerControls extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      
-    }
-  }
   componentDidUpdate(prevProps) {
     if (prevProps.data !== this.props.data) {
       this.setState(this.props.data);

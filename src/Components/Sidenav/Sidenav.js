@@ -1,7 +1,6 @@
 import React from 'react';
 import './Sidenav.css';
 import { LinkContainer } from 'react-router-bootstrap';
-import styled from 'styled-components';
 import Nav from 'react-bootstrap/Nav';
 
 export class SidenavListItem extends React.Component {
