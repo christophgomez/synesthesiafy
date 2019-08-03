@@ -15,6 +15,11 @@ Read more about it [here](https://synesthesiafy.herokuapp.com/about)
 ### TODO
 
 - Implement color effects for various song features (Modality (major/minor), Tempo, Valence, Loudness, Energy, etc.)
+- Add additional controls to playback bar.
+  - Track progess bar/slider
+  - Shuffle button
+  - Repeat button
+  - Like button
 - Implement Library search
 - Implement Playlist, Album, and Track views
 - Implement "Ambient Mode"
@@ -29,3 +34,5 @@ Read more about it [here](https://synesthesiafy.herokuapp.com/about)
   - Artwork/Color toggle
   - Immediately update UI color on key/color change (easy)
 - Chrome extension to analyze the frequency of every note to create a real-time, color changing UI/visualizer (may be against Web SDK user agreement, see VueVisualizer for current chrome extension/Spotify implementation)
+- When I'm feeling really brave:
+  - Implement a way to gather feedback from user on current playback/displayed color, process feedback and use it to predict color user associates with a type of song (ML/DL or logistic regression)
