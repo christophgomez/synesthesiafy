@@ -4,7 +4,7 @@
 
 synesthesiafy is an exploration of synesthesia, and more specifically chromesthesia, through spotify. This web app serves as a tool for synesthetes to organize their music based on the colors they associate or see with their music, and for the general population to explore their library through a synesthetic lens.
 
-My first React App, running on Node.js/Express, still very much in the proof of concept/build stage.
+React web app running on Node.js/Express, still very much in the proof of concept/build stage.
 
 ## Details
 
