@@ -1,0 +1,20 @@
+.Auth {
+  background-color: #FF7E30;
+  min-height: 100vh;
+  color: white;
+  min-width: 100vw;
+  text-transform: initial;
+}
+
+.c {
+  text-align: center;
+  line-height: 1.5em;
+  padding: 1em;
+  overflow:scroll;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

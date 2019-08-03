@@ -1,0 +1,50 @@
+.About {
+  background-color: #FF7E30;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  min-width: 100vw;
+  flex-direction: column;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.Content {
+  word-break: break-word;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+  order: 1;
+  padding-top: 6em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Explanation {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 2.0em;
+  padding-right:2.0em;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  text-align:left;
+  padding: 0;
+}
+
+li {
+  margin: 1em auto;
+}
+
+hr {
+  color:white;
+  background-color: white;
+  position: relative;
+  top:-10px;
+  width:40%;
+}

@@ -1,0 +1,23 @@
+.dashnav .dashnav-item {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 1em 2em;
+  color: var(--text-color);
+  background-color: var(--comp-color);
+  transition: background-color .5s;
+}
+
+.dashnav {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.dashnav-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  color: var(--text-color);
+}

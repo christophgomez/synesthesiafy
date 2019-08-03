@@ -3,12 +3,44 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-regular-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "formik": "^1.5.8",
+    "http": "0.0.0",
+    "is-url-external": "^1.0.3",
+    "morgan": "^1.9.1",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-bootstrap-sidebar": "0.0.1",
+    "react-color": "^2.17.3",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.0.1",
+    "react-router-hash-link": "^1.2.1",
+    "react-router-transition": "^1.3.0",
+    "react-scripts": "3.0.1",
+    "reactcss": "^1.2.3",
+    "request": "^2.88.0",
+    "request-promise-core": "^1.1.2",
+    "request-promise-native": "^1.0.7",
+    "serve-favicon": "^2.5.0",
+    "serve-static": "^1.14.1",
+    "styled-components": "^4.3.2",
+    "tone": "^13.4.9"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "",
+    "dev": "npm-run-all --parallel serve server",
+    "serve": "react-scripts start",
+    "server": "nodemon ./server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -27,5 +59,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5"
   }
 }

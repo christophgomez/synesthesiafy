@@ -1,0 +1,32 @@
+.settings-section {
+  padding: 1em;
+  margin: 2em 0;
+  padding-bottom: 0;
+}
+
+.settings-section-title:hover {
+  cursor: pointer;
+}
+
+.settings-section-title h3 {
+  text-align: left;
+}
+
+.settings-section-title hr {
+  text-align: left;
+  width: 100%;
+}
+
+.settings-section-title {
+  background-color: var(--comp-color); 
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 0;
+  transition: background-color .5s;
+}
+
+
+ul:focus, div:focus {
+  border: none;
+  outline: none;
+}

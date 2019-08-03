@@ -1,0 +1,62 @@
+{
+  "C": {
+    "color": "#f90f00",
+    "major": "Normal",
+    "minor": "Normal"
+  },
+  "C# Db": {
+    "color": "#9000ff",
+    "major": "Normal",
+    "minor": "Normal"
+  },
+  "D": {
+    "color": "#ffff00",
+    "major": "Normal",
+    "minor": "Normal"
+  },
+  "D# Eb": {
+    "color": "#b7468b",
+    "major": "Normal",
+    "minor": "Normal"
+  },
+  "E": {
+    "color": "#c3f2ff",
+    "major": "Normal",
+    "minor": "Normal"
+  },
+  "F": {
+    "color": "#ab0634",
+    "major": "Normal",
+    "minor": "Normal"
+  },
+  "F# Gb": {
+    "color": "#7f8bfd",
+    "major": "Normal",
+    "minor": "Normal"
+  },
+  "G": {
+    "color": "#fa7f02",
+    "major": "Normal",
+    "minor": "Normal"
+  },
+  "G# Ab": {
+    "color": "#bb75fc",
+    "major": "Normal",
+    "minor": "Normal"
+  },
+  "A": {
+    "color": "#38cc33",
+    "major": "Normal",
+    "minor": "Normal"
+  },
+  "A# Bb": {
+    "color": "#a9677c",
+    "major": "Normal",
+    "minor": "Normal"
+  },
+  "B": {
+    "color": "#8ec9ff",
+    "major": "Normal",
+    "minor": "Normal"
+  }
+}

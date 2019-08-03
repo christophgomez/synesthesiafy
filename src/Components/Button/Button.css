@@ -1,0 +1,43 @@
+.Button {
+  background-color:transparent;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	font-size:calc(10px + 1vmin);
+	padding:10px 10px;
+  text-decoration:none;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  opacity: .9;
+  outline:none !important;
+  color: white;
+  border-color:none;
+  border: 0;
+}
+
+.Link {
+  background-color:transparent;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	font-size:calc(10px + 1vmin);
+	padding:10px 10px;
+  text-decoration:none;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  opacity: 1;
+  outline:none !important;
+  color: white;
+}
+
+.Link:hover {
+  color:white;
+}
+
+.Button:hover {
+  opacity: 1;
+}
